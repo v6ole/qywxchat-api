@@ -10,7 +10,7 @@ docker run -d \
     --name qywxchat-api \
     --restart=always \
     -p 8800:80 \
-    v6ole/qywxchat-api:latest
+    v6ole/qywechat-api:latest
 ```
 
 ### Docker Compose
@@ -22,7 +22,7 @@ services:
         restart: always
         ports:
             - '8800:80'
-        image: 'v6ole/qywxchat-api:latest'
+        image: 'v6ole/qywechat-api:latest'
 ```
 
 *请注意修改`8800`端口为您实际需要的端口*

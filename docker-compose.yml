@@ -6,7 +6,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: 'v6ole/qywxchat-api:latest'
+    image: 'v6ole/qywechat-api:latest'
     ports:
       - '8800:80'
     volumes:
