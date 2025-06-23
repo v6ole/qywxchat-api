@@ -23,7 +23,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKER_USERNAME }}/wxchat
+          images: ${{ secrets.DOCKER_USERNAME }}/qywxchat-api
           tags: |
             type=raw,value=latest
 

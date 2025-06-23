@@ -1,6 +1,6 @@
 # 企业微信API代理 Docker
 
-[![Build](https://github.com/DDS-Derek/wxchat-Docker/actions/workflows/build.yml/badge.svg)](https://github.com/DDS-Derek/wxchat-Docker/actions/workflows/build.yml) [![Docker readme update](https://github.com/DDS-Derek/wxchat-Docker/actions/workflows/readme_update.yml/badge.svg)](https://github.com/DDS-Derek/wxchat-Docker/actions/workflows/readme_update.yml)
+[![Build](https://github.com/v6ole/qywxchat-api/actions/workflows/build.yml/badge.svg)](https://github.com/v6ole/qywxchat-api/actions/workflows/build.yml) [![Docker readme update](https://github.com/v6ole/qywxchat-api/actions/workflows/readme_update.yml/badge.svg)](https://github.com/v6ole/qywxchat-api/actions/workflows/readme_update.yml)
 
 ## 快速部署
 
@@ -22,7 +22,7 @@ services:
         restart: always
         ports:
             - '8800:80'
-        image: 'v6ole/wxchat:latest'
+        image: 'v6ole/qywxchat-api:latest'
 ```
 
 *请注意修改`8800`端口为您实际需要的端口*
