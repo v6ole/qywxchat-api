@@ -1,13 +1,13 @@
 # 企业微信API代理 Docker
 
-[![Build](https://github.com/v6ole/qywxchat-api/actions/workflows/build.yml/badge.svg)](https://github.com/v6ole/qywxchat-api/actions/workflows/build.yml) [![Docker readme update](https://github.com/v6ole/qywxchat-api/actions/workflows/readme_update.yml/badge.svg)](https://github.com/v6ole/qywxchat-api/actions/workflows/readme_update.yml)
+[![Build](https://github.com/v6ole/qywechat-api/actions/workflows/build.yml/badge.svg)](https://github.com/v6ole/qywechat-api/actions/workflows/build.yml) [![Docker readme update](https://github.com/v6ole/qywechat-api/actions/workflows/readme_update.yml/badge.svg)](https://github.com/v6ole/qywechat-api/actions/workflows/readme_update.yml)
 
 ## 快速部署
 
 ### Docker 命令
 ```bash
 docker run -d \
-    --name qywxchat-api \
+    --name qywechat-api \
     --restart=always \
     -p 8800:80 \
     v6ole/qywechat-api:latest
@@ -17,8 +17,8 @@ docker run -d \
 ```yaml
 version: '3.3'
 services:
-    qywxchat-api:
-        container_name: qywxchat-api
+    qywechat-api:
+        container_name: qywechat-api
         restart: always
         ports:
             - '8800:80'
@@ -30,14 +30,14 @@ services:
 ### 本地构建运行
 ```bash
 # 克隆仓库
-git clone https://github.com/v6ole/qywxchat-api.git
-cd qywxchat-api
+git clone https://github.com/v6ole/qywechat-api.git
+cd qywechat-api
 
 # 构建镜像
-docker build -t qywxchat-api:latest .
+docker build -t qywechat-api:latest .
 
 # 运行容器
-docker run -d --name qywxchat-api --restart=always -p 8800:80 qywxchat-api:latest
+docker run -d --name qywechat-api --restart=always -p 8800:80 qywechat-api:latest
 
 # 或者使用Docker Compose
 # docker-compose up -d

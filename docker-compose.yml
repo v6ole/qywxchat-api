@@ -1,7 +1,7 @@
 version: '3.3'
 services:
-  qywxchat-api:
-    container_name: qywxchat-api
+  qywechat-api:
+    container_name: qywechat-api
     restart: always
     build:
       context: .
